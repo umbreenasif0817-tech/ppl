@@ -90,6 +90,12 @@ To deploy to production:
 vercel --prod
 ```
 
+### Option C: GitHub Pages (automated)
+
+The repository includes a GitHub Actions workflow that builds and publishes the app to GitHub Pages whenever a commit is pushed to `main`. The Vite build uses `/ppl/` as its base path on GitHub Actions so the app assets load from the project site URL:
+
+`https://umbreenasif0817-tech.github.io/ppl/`
+
 ---
 
 ## 4. Single-Page Application (SPA) Routing Note
@@ -103,7 +109,7 @@ StudyFlow uses state-based tab routing (`activeTab`), so all navigation works se
 Before submitting your final project package through LMS / TurnItIn, verify that you have assembled all required components:
 
 - [ ] **GitHub Repository Link:** Complete source code pushed to public GitHub repository.
-- [ ] **Published Application Link:** Working web URL hosted on Vercel.
+- [ ] **Published Application Link:** Working web URL hosted on Vercel or GitHub Pages.
 - [ ] **Five-Page Project Report:** Formatted according to the page-by-page structure specified in the assessment remit:
   - *Page 1:* Introduction, problem statement, and objectives.
   - *Page 2:* Development tools, architecture, and implementation details.
